@@ -18,34 +18,20 @@
             </p>
         </header>
 
-        <section class="posts-grid" aria-label="Blog posts">
-            <article class="post-card">
-                <p class="post-meta">April 2026</p>
-                <h2>Launching the blog</h2>
-                <p>
-                    This is the first post on the site. Use this space to introduce the blog
-                    and explain what readers can expect from future entries.
-                </p>
-            </article>
-
-            <article class="post-card">
-                <p class="post-meta">April 2026</p>
-                <h2>What I am working on</h2>
-                <p>
-                    Share current projects, experiments, or milestones here. This layout gives
-                    you a simple structure you can duplicate for more posts.
-                </p>
-            </article>
-
-            <article class="post-card">
-                <p class="post-meta">April 2026</p>
-                <h2>Ideas worth revisiting</h2>
-                <p>
-                    Keep a running log of thoughts, lessons learned, or inspiration that you
-                    want to revisit later.
-                </p>
-            </article>
+        <section class="feature-panel blog-intro" aria-labelledby="blog-manage-title">
+            <div>
+                <p class="section-label">Easy updates</p>
+                <h2 id="blog-manage-title">Add new posts from one file</h2>
+            </div>
+            <p class="section-copy">
+                This blog now reads from a shared post list. To publish something new, add one
+                post object in <code>posts.js</code> and it will appear here automatically.
+            </p>
         </section>
+
+        <section class="posts-grid" aria-label="Blog posts" id="posts-list"></section>
     </main>
+    <script type="module" src="posts.js"></script>
+    <script type="module" src="blog.js"></script>
 </body>
 </html>
